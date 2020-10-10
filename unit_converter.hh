@@ -61,11 +61,11 @@ public:
         }
     };
 
-    double convert(int factor, double numberOfUnits) {
+    double reverseConvert(int factor, double numberOfUnits) {
         return (factors[factor]->getConversionFactor() * numberOfUnits);
     };
 
-    double reverseConvert(int factor, double numberOfUnits) {
+    double convert(int factor, double numberOfUnits) {
         return (numberOfUnits / factors[factor]->getConversionFactor());
     };
 
